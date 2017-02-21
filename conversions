@@ -1,0 +1,50 @@
+1) arraylist -> array
+String[] t = list.toArray();
+
+2) array -> arraylist
+ArrayList<String> ist= new ArrayList<String>(Arrays.asList(names));
+
+3) arraylist<String> -> String[]
+String [] array = list.toArray(new String[list.size()]);
+
+4) String[] -> arraylist<String>
+List<String> wordList = Arrays.asList(words);
+
+5) arraylist<Integer> -> Intger[]
+Integer a[] = list.toArray(new Integer[list.size()]);
+
+6) Intger[] -> arraylist<Integer>
+List<Integer> intList = Arrays.asList(intArray);
+
+7) int -> Integer
+Integer intObj = new Integer(i);
+
+8) Integer -> int, Integer -> double, Integer -> byte, Integer -> short
+int g = intObj.intValue();
+int g = intObj.doubleValue();
+int g = intObj.byteValue();
+int g = intObj.shortValue();
+
+9) String to int
+int result = Integer.parseInt(str);
+
+10) String to Integer
+Integer result = Integer.valueOf(str);
+
+11) int to String
+String s=String.valueOf(i); OR String s=Integer.toString(i) OR "" + i
+
+12) int to char
+char c = (char)i
+
+13) char to int
+int i = (int)c;
+
+14) string to char[]
+char[] charArray = str.toCharArray()
+
+15) char[] to string
+String output1 = new String(myString); //myString is char[]
+OR
+String output2 = String.valueOf(myString);
+
