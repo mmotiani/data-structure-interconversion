@@ -48,3 +48,9 @@ String output1 = new String(myString); //myString is char[]
 OR
 String output2 = String.valueOf(myString);
 
+16) String to ArrayList<String>
+List<String> list = new ArrayList<String>(Arrays.asList(myString.split(" ")));
+
+17) ArrayList<String> to String
+String str = String.join(" ", list);
+
