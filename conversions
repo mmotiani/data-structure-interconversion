@@ -54,3 +54,12 @@ List<String> list = new ArrayList<String>(Arrays.asList(myString.split(" ")));
 17) ArrayList<String> to String
 String str = String.join(" ", list);
 
+18) Sort Interval based on start time
+ Arrays.sort(intervals, new Comparator<int[]>(){
+            @Override
+             public int compare(int[] p1, int[] p2){
+                 return Integer.compare(p1[0],p2[0]);
+             }
+         });
+ 
+ 
